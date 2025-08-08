@@ -1,0 +1,324 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pics/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -10%;
+}
+ul{
+    margin-top: -4%;
+    margin-right: 6%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(254, 255, 255);
+    margin-top: -3%;
+    transition: .4s ease;
+}
+ul li a:hover{
+    color: rgb(250, 1, 1);
+}
+.header-text h2{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: -7%;
+    color: #e0dfdf;
+}
+.header-text h2 span{
+        position: absolute;
+        margin-top: 30px;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        font-weight: bold;
+        color: rgba(255, 0, 0, 0.671);
+        animation: move 5s infinite;
+      }
+      
+      @keyframes move {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+    
+}
+
+/*----------about-----------*/
+#about{
+    padding: 60px 0;
+    color: 
+    #c2c2c2;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+.about-col-2{
+    flex-basis: 60%;
+    text-align: justify;
+}
+.about-col-2 img{
+    width: 30%;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 18px;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*----------skills-----------*/
+#skills{
+    padding: 30px 0;
+}
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.skill-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: 0.5s, transform 0.5s;
+}
+.skill-list div ul li span{
+    font-size: 15px;
+}
+.skill-list div h1{
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 15px;
+}
+.skill-list div span{
+    color: rgba(22, 141, 238, 0.671);
+}
+.skill-list div img{
+    margin-right: -5px;
+}
+.skill-list div:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    transform: translateY(-10px);
+}
+/*----------project-----------*/
+#project{
+    padding: 50px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.proto{
+    border-radius: 10px;
+    position: relative;
+}
+.proto img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.proto video{
+    width: 100%;
+    margin-top: -7%;
+}
+
+
+/*----------SDG-----------*/
+#SDG{
+    padding: 50px 0;
+    margin-top: -30px;
+}
+.sdg-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.sdg15{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.sdg15 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.sdg15:hover img{
+    transform: scale(1.1);
+}
+.sdg15:hover .layer{
+    height: 100%;
+}
+
+/*----------contact-----------*/
+.contact-center{
+    flex-basis: 35%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.contact-center h1{
+    text-align: center;
+}
+.contact-center p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+.contact-center p i{
+    color: #d41818;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.social-icons{
+    margin-top: 25px;
+    text-align: center;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #a5a5a5;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-center{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+/*--------css for small screen-------*/
+nav .fa-regular, .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(pics/phone-background.png);
+    }
+    .header-text{
+        margin-top: 30px;
+        left: 10px;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .header-text h2 span{
+        left: 28%;
+    }
+    .contact-center p{
+        margin-top: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
